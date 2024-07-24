@@ -1,0 +1,20 @@
+{
+  "name": "mongoose-assignment",
+  "version": "1.0.0",
+  "main": "insertion.js",
+  "scripts": {
+    "Start": " nodemon insertion.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "csv-parser": "^3.0.0",
+    "express": "^4.19.2",
+    "mongoose": "^8.5.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.4"
+  }
+}

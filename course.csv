@@ -1,0 +1,17 @@
+Course,Name,Prerequisites
+SSC,, 
+Inter,MPC,SSC
+Inter,BIPC,SSC
+Inter,MEC,SSC
+Inter,CEC,SSC
+Engineering,CSE,Inter,MPC
+Engineering,ECE,Inter,MPC
+Engineering,CIVIL,Inter,MPC
+Engineering,MECH,Inter,MPC
+Engineering,EEE,Inter,MPC
+PharmD,Inter,BIPC
+Bpharmacy,Inter,BIPC
+Degree,BSC,Inter,MPC
+Degree,MPCS,Inter,MPC
+Degree,BCom,Inter,MPC
+Degree,BZC,Inter,MPC
