@@ -3,6 +3,7 @@ const mongoose = require("mongoose");
 const csv = require("csv-parser");
 const fs = require("fs");
 const Course = require("./Schema");
+const routes = require("./Routes/routes.js");
 
 const app = express();
 const PORT = 3000;
@@ -39,7 +40,7 @@ app.get("/import", async (req, res) => {
       console.log("CSV file processed");
       await connect();
       for (const courseData of courses) {
-        console.log("Course Data to Save:", courseData);
+        console.log("Course Data :", courseData);
         const { course, name, prerequisites } = courseData;
         const courseDoc = new Course({ course, name, prerequisites });
         await courseDoc.save();
@@ -49,6 +50,8 @@ app.get("/import", async (req, res) => {
       res.send("Data imported successfully");
     });
 });
+
+app.use("/api", routes);
 
 app.listen(PORT, () => {
   console.log(`Server is running on http://localhost:${PORT}`);
